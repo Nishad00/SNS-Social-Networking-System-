@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'bu#x-oyn)@c2lxo7yn728o+ys140h^st7m*o9-glp*#=x2f=ec'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True 
 
 ALLOWED_HOSTS = []
 
@@ -131,3 +131,21 @@ LOGIN_URL = 'login'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 MEDIA_URL = '/media/'
+
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_HOST = 'smtp.gmail.com'
+
+EMAIL_PORT = 587
+
+EMAIL_USE_TLS = True
+
+EMAIL_HOST_USER = 'nishadvp@mitaoe.ac.in'
+
+DEFAULT_FROM_EMAIL = 'nishadvp@mitaoe.ac.in'
+
+SERVER_EMAIL = 'nishadvp@mitaoe.ac.in'
+
+EMAIL_HOST_PASSWORD = 'wjkjlxnuxovisfer'
